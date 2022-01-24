@@ -50,3 +50,22 @@ button:hover{
 #random{
     font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+    body {
+        font-size:30px;
+    }
+    #container{
+    margin:20% 2% 20% 2%;
+    padding: 100px;
+    }
+
+    #random{
+        font-size: 50px;
+}
+    #titulo{
+        font-size: 100px;
+}
+#key{
+    font-size: 80px;
+}
+}
