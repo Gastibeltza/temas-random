@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Play Random Standards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>PLAY RANDOM STANDARDS</h1></header>
+<div id="container">
+        <h2>NAME:</h2>
+        <h3 id="titulo">But not for me</h3>
+
+<h2>KEY:</h2>
+<!-- <button type:button id="key">Eb</button> -->
+
+<audio id="sound1" src="notas.wav" preload="auto"></audio>
+  <button onclick="document.getElementById('sound1').play();" id="key">Eb</button>
+</div>
+
+    <button type:button id="random" onclick="randomizar()">RANDOMIZE!</button>
+
+</body>
+<script src="temas.js"></script>
+
+</html>
