@@ -22,7 +22,65 @@
 </div>
 
     <button type:button id="random" onclick="randomizar()">RANDOMIZE!</button>
+<!-- Hamburguesa -->
 
+<footer>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
+    <h2>Select your Standards</h2>
+
+       <input id="menu-toggle" type="checkbox" onclick="visibilidad()" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu" id="textoMenu">
+      <li>
+        <input type="checkbox" id="botontakeTheATrain"
+        name="seleccion de tema" value="takeTheATrain">
+       <label for="botontakeTheATrain">Take the A Train</label>    </li>
+      <li>
+        <input type="checkbox" id="botonallOfMe"
+        name="seleccion de tema" value="allOfMe">
+       <label for="botonallOfMe">All of Me</label> 
+      </li>
+      <li>
+        <input type="checkbox" id="botonallTheThingsYouAre"
+        name="seleccion de tema" value="allTheThingsYouAre">
+       <label for="botonallTheThingsYouAre">All the Things You Are</label>    </li>
+      <li>
+        <input type="checkbox" id="botonaloneTogether"
+        name="seleccion de tema" value="aloneTogether">
+       <label for="botonaloneTogether">Alone Together</label> 
+      </li>
+      <li>
+        <input type="checkbox" id="botonangelEyes"
+        name="seleccion de tema" value="angelEyes">
+       <label for="botonangelEyes">Angel Eyes</label> 
+      </li> <li>
+        <input type="checkbox" id="botonautumnLeaves"
+        name="seleccion de tema" value="autumnLeaves">
+       <label for="botonautumnLeaves">Autumn Leaves</label> 
+      </li>
+    </ul>
+  </section>
+</footer>
+ 
+<script>
+  function visibilidad() {
+  
+  if (document.getElementById("menu-toggle").checked === true) {
+      
+      document.getElementById("textoMenu").style.visibility = "visible";
+      
+  } 
+  else {
+      
+      document.getElementById("textoMenu").style.visibility = "hidden";
+      
+  }
+  }
+  
+  </script>
 </body>
 <script src="temas.js"></script>
 
