@@ -178,8 +178,6 @@ EDIT ON
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-/* } */
-
 
 @media screen and (max-width: 600px) {
     body {
