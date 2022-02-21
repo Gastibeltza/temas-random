@@ -7,9 +7,9 @@ body{
 header{
     border-style:solid;
     border-color: gold;
-    border-width:15px;
+    border-width:12px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     }
 #container{
     border-style:solid;
@@ -17,22 +17,22 @@ header{
     border-width:1px;
     color:gold;
     background-color: black;
-    margin:2% 15% 2% 15%;
-    padding: 10px;
+    margin:1% 10% 1% 10%;
+    padding: 20px;
     position:static;
 }
 h2{
     text-align: left;
     margin:10px;
-    padding:20px;
+    /* padding:5px; */
 }
 #titulo{
     color:white;
     position:sticky;
-    font-size: 80px;
+    font-size: 50px;
 }
 #key{
-    font-size: 50px;
+    font-size: 40px;
 }
 button{
     background: none;
@@ -52,9 +52,13 @@ button:hover{
 #random{
     font-size: 20px;
 }
+.texto-seleccion-temas{
+display: flex;
+justify-content: flex-start;}
 /* Hamburguesa */
 HTML SCSSResult Skip Results Iframe
 EDIT ON
+
 
 * {
   box-sizing: border-box;
@@ -68,8 +72,7 @@ EDIT ON
   background: black;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
-  height: 50px;
-  padding: 1em;
+  height: 100%;
 }
 
 .menu {
@@ -88,13 +91,12 @@ EDIT ON
 }
 
 .menu-button-container {
-  position: r;
-  display: none;
+  position: absolute;
+  display: flex;
   height: 100%;
   width: 30px;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -181,20 +183,30 @@ EDIT ON
 
 @media screen and (max-width: 600px) {
     body {
-        font-size:30px;
+        /* font-size:30px; */
+    }
+    header{
+      border-width:8px;
+      font-weight: bold;
+      font-size: 12px;
     }
     #container{
-    margin:20% 2% 20% 2%;
-    padding: 100px;
+    /* margin:20% 2% 20% 2%;
+    padding: 100px; */
     }
-
+    li{
+      font-size: 12px;
+ }
     #random{
-        font-size: 50px;
+        /* font-size: 50px; */
 }
+    #h2{
+      font-size: 15px;
+    }
     #titulo{
-        font-size: 100px;
+        font-size: 20px;
 }
 #key{
-    font-size: 80px;
+    font-size: 15x;
 }
 }
