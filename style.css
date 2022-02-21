@@ -182,31 +182,25 @@ EDIT ON
   }
 
 @media screen and (max-width: 600px) {
-    body {
-        /* font-size:30px; */
-    }
+    
     header{
       border-width:8px;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 14px;
     }
-    #container{
-    /* margin:20% 2% 20% 2%;
-    padding: 100px; */
-    }
+  
     li{
-      font-size: 12px;
+      font-size: 14px;
  }
-    #random{
-        /* font-size: 50px; */
-}
-    #h2{
-      font-size: 15px;
-    }
+   .name-and-key{
+    font-size: 18px;
+   }
+
+
     #titulo{
-        font-size: 20px;
+        font-size: 25px;
 }
 #key{
-    font-size: 15x;
+    font-size: 25px;
 }
 }
