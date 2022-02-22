@@ -55,6 +55,14 @@ button:hover{
 .texto-seleccion-temas{
 display: flex;
 justify-content: flex-start;}
+
+footer{
+  display:flex;
+  justify-content: ;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10% 2% 0% 2%;
+}
 /* Hamburguesa */
 HTML SCSSResult Skip Results Iframe
 EDIT ON
