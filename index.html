@@ -1,121 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Play Random Standards</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-      <header>
-        <h1>PLAY RANDOM STANDARDS</h1></header>
-<div id="container">
-        <h2 class="name-and-key">NAME:</h2>
-        <h3 id="titulo">But not for me</h3>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>PLAY RANDOM STANDARDS</h1>
+    </header>
+    <div id="container">
+      <h2 class="name-and-key">NAME:</h2>
+      <h3 id="titulo">But not for me</h3>
 
-        <h2 class="name-and-key">KEY:</h2>
-<!-- <button type:button id="key">Eb</button> -->
+      <h2 class="name-and-key">KEY:</h2>
+      <!-- <button type:button id="key">Eb</button> -->
 
-<audio id="sound1" src="notas.wav" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();" id="key">Eb</button>
-</div>
+      <audio id="sound1" src="notas.wav" preload="auto"></audio>
+      <button onclick="document.getElementById('sound1').play();" id="key">
+        Eb
+      </button>
+    </div>
 
     <button type:button id="random" onclick="randomizar()">RANDOMIZE!</button>
-<!-- Hamburguesa -->
+    <!-- Hamburguesa -->
 
-<footer>
-  <h3 class="texto-seleccion-temas">Select your Standards:</h3>
+    <footer>
+      <h3 class="texto-seleccion-temas">Select your Standards:</h3>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <section class="top-nav">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <section class="top-nav">
+        <input id="menu-toggle" type="checkbox" onclick="visibilidad()" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu" id="textoMenu">
+          <li>
+            <input
+              type="checkbox"
+              id="botontakeTheATrain"
+              name="seleccion de tema"
+              value="takeTheATrain"
+            />
+            <label for="botontakeTheATrain">Take the A Train</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonallOfMe"
+              name="seleccion de tema"
+              value="allOfMe"
+            />
+            <label for="botonallOfMe">All of Me</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonallTheThingsYouAre"
+              name="seleccion de tema"
+              value="allTheThingsYouAre"
+            />
+            <label for="botonallTheThingsYouAre">All the Things You Are</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonaloneTogether"
+              name="seleccion de tema"
+              value="aloneTogether"
+            />
+            <label for="botonaloneTogether">Alone Together</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonangelEyes"
+              name="seleccion de tema"
+              value="angelEyes"
+            />
+            <label for="botonangelEyes">Angel Eyes</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonautumnLeaves"
+              name="seleccion de tema"
+              value="autumnLeaves"
+            />
+            <label for="botonautumnLeaves">Autumn Leaves</label>
+          </li>
 
-       <input id="menu-toggle" type="checkbox" onclick="visibilidad()" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-    <ul class="menu" id="textoMenu">
-      <li>
-        <input type="checkbox" id="botontakeTheATrain"
-        name="seleccion de tema" value="takeTheATrain">
-       <label for="botontakeTheATrain">Take the A Train</label>    </li>
-      <li>
-        <input type="checkbox" id="botonallOfMe"
-        name="seleccion de tema" value="allOfMe">
-       <label for="botonallOfMe">All of Me</label> 
-      </li>
-      <li>
-        <input type="checkbox" id="botonallTheThingsYouAre"
-        name="seleccion de tema" value="allTheThingsYouAre">
-       <label for="botonallTheThingsYouAre">All the Things You Are</label>    </li>
-      <li>
-        <input type="checkbox" id="botonaloneTogether"
-        name="seleccion de tema" value="aloneTogether">
-       <label for="botonaloneTogether">Alone Together</label> 
-      </li>
-      <li>
-        <input type="checkbox" id="botonangelEyes"
-        name="seleccion de tema" value="angelEyes">
-       <label for="botonangelEyes">Angel Eyes</label> 
-      </li> <li>
-        <input type="checkbox" id="botonautumnLeaves"
-        name="seleccion de tema" value="autumnLeaves">
-       <label for="botonautumnLeaves">Autumn Leaves</label> 
-         <li>
-        <input type="checkbox" id="botonbeautifulLove"
-        name="seleccion de tema" value="beautifulLove">
-       <label for="botonbeautifulLove">Beautiful Love</label>    </li>
-      <li>
-        <input type="checkbox" id="botonBilliesBounce"
-        name="seleccion de tema" value="allOfMe">
-       <label for="botonBilliesBounce">Billie's Bounce</label> 
-      </li>
-      <li>
-        <input type="checkbox" id="botonBlueBossa"
-        name="seleccion de tema" value="blueBossa">
-       <label for="botonBlueBossa">Blue Bossa</label>    </li>
-      <li>
-        <input type="checkbox" id="botonBodyAndSoul"
-        name="seleccion de tema" value="bodyAndSoul">
-       <label for="botonBodyAndSoul">Body And Soul</label> 
-      </li>
-      <li>
-        <input type="checkbox" id="botonButNotForMe"
-        name="seleccion de tema" value="butNotForMe">
-       <label for="botonButNotForMe">But Not for Me</label> 
-      </li> <li>
-        <input type="checkbox" id="botonByeByeBlackBird"
-        name="seleccion de tema" value="byeByeBlackbird">
-       <label for="botonByeByeBlackBird">Bye Bye Blackbird</label> 
-       
-      </li>
-      
+          <li>
+            <input
+              type="checkbox"
+              id="botonbeautifulLove"
+              name="seleccion de tema"
+              value="beautifulLove"
+            />
+            <label for="botonbeautifulLove">Beautiful Love</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonBilliesBounce"
+              name="seleccion de tema"
+              value="allOfMe"
+            />
+            <label for="botonBilliesBounce">Billie's Bounce</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonBlueBossa"
+              name="seleccion de tema"
+              value="blueBossa"
+            />
+            <label for="botonBlueBossa">Blue Bossa</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonBodyAndSoul"
+              name="seleccion de tema"
+              value="bodyAndSoul"
+            />
+            <label for="botonBodyAndSoul">Body And Soul</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonButNotForMe"
+              name="seleccion de tema"
+              value="butNotForMe"
+            />
+            <label for="botonButNotForMe">But Not for Me</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="botonByeByeBlackBird"
+              name="seleccion de tema"
+              value="byeByeBlackbird"
+            />
+            <label for="botonByeByeBlackBird">Bye Bye Blackbird</label>
+          </li>
+        </ul>
+      </section>
+    </footer>
 
-
-
-
-
-    </ul>
-  </section>
-</footer>
- 
-<script>
-  function visibilidad() {
-  
-  if (document.getElementById("menu-toggle").checked === true) {
-      
-      document.getElementById("textoMenu").style.visibility = "visible";
-      
-  } 
-  else {
-      
-      document.getElementById("textoMenu").style.visibility = "hidden";
-      
-  }
-  }
-  
-  </script>
-</body>
-<script src="temas.js"></script>
-
+    <script>
+      function visibilidad() {
+        if (document.getElementById("menu-toggle").checked === true) {
+          document.getElementById("textoMenu").style.visibility = "visible";
+        } else {
+          document.getElementById("textoMenu").style.visibility = "hidden";
+        }
+      }
+    </script>
+  </body>
+  <script src="temas.js"></script>
 </html>
